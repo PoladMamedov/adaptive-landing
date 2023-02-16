@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HW2 adaptive</title>
+   <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+   <header class="main-header">
+      <div class="container">
+         <ul class="main-header__menu">
+            <li>
+               <a class="main-header__menu-link main-header-menu__link--active" href="#">HOME</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">ABOUT US</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">OUR JOURNAL</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">PROJECTS</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">NEWS</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">FEATUERS</a>
+            </li>
+            <li>
+               <a class="main-header__menu-link" href="#">CONTACT</a>
+            </li>
+         </ul>
+         <button class="main-header__burger-btn">
+            <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect width="17" height="2" fill="white" />
+               <rect y="4" width="17" height="2" fill="white" />
+               <rect y="8" width="17" height="2" fill="white" />
+            </svg>
+            <svg class="main-header__brgrbtnsvg--hidden" width="15" height="15" viewBox="0 0 15 12" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+               <rect x="12.8033" y="13.7175" width="17" height="2" transform="rotate(-135 12.8033 13.7175)"
+                  fill="white" />
+               <rect x="0.782471" y="12.3033" width="17" height="2" transform="rotate(-45 0.782471 12.3033)"
+                  fill="white" />
+            </svg>
+         </button>
+      </div>
+   </header>
+   <main>
+      <section>
+         <div class="container">
+            <picture>
+               <source srcset="./dist/img/header-320img.png" media="(max-width: 500px)" type="image/png">
+               <source srcset="./dist/img/header-768img.png" media="(max-width: 1170px)" type="image/png">
+               <source srcset="./dist/img/header-1200img.png" media="(min-width: 1170px)" type="image/png">
+               <img class="big-global-picture" width="1170" height="550" src="./dist/img/header-1200img.png" alt="">
+            </picture>
+         </div>
+      </section>
+      <section class="recent-posts">
+         <div class="container">
+            <p class="section-title recent-posts__title">- our Recent posts</p>
+            <ul class="recent-posts__list">
+               <li class="recent-posts__post">
+                  <img class="recent-posts__img" src="./dist/img/post-img1.png" alt="post1" width="160" height="140">
+                  <a class="recent-posts__title-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                  <p class="recent-posts__comments">
+                     Photography, Journal &nbsp &nbsp / &nbsp &nbsp 9 Comments
+                  </p>
+                  <p class="recent-posts__text">
+                     Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis
+                     vestibulum.
+                  </p>
+               </li>
+               <li class="recent-posts__post"><img class="recent-posts__img" src="./dist/img/post-img2.png" alt="post1"
+                     width="160" height="140">
+                  <a class="recent-posts__title-link" href="#">Lorem Ipsum Dolor Sit Amet</a>
+                  <p class="recent-posts__comments">
+                     Photography, Journal &nbsp &nbsp / &nbsp &nbsp 7 Comments
+                  </p>
+                  <p class="recent-posts__text">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sapiente ipsam adipisci aperiam
+                     optio beatae.
+                  </p>
+               </li>
+               <li class="recent-posts__post"><img class="recent-posts__img" src="./dist/img/post-img3.png" alt="post1"
+                     width="160" height="140">
+                  <a class="recent-posts__title-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                  <p class="recent-posts__comments">
+                     Photography, Journal &nbsp &nbsp / &nbsp &nbsp 3 Comments
+                  </p>
+                  <p class="recent-posts__text">
+                     Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis
+                     vestibulum.
+                  </p>
+               </li>
+               <li class="recent-posts__post"><img class="recent-posts__img" src="./dist/img/post-img4.png" alt="post1"
+                     width="160" height="140">
+                  <a class="recent-posts__title-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                  <p class="recent-posts__comments">
+                     Photography, Journal &nbsp &nbsp / &nbsp &nbsp 12 Comments
+                  </p>
+                  <p class="recent-posts__text">
+                     Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis
+                     vestibulum.
+                  </p>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="inst-shots">
+         <div class="container">
+            <p class="inst-shots__header">
+               <span class="section-title inst-shots__title">- Latest Instagram Shots</span>
+               <a href="#" class="section-title inst-shots__inst-link">go to our instagram page -</a>
+            </p>
+            <ul class="inst-shots__list">
+               <li class="inst-shots__item">
+                  <img class="inst-shots__img" src="./dist/img/inst-post-img1.png" alt="" width="285" height="285">
+               </li>
+               <li class="inst-shots__item">
+                  <img class="inst-shots__img" src="./dist/img/inst-post-img2.png" alt="" width="285" height="285">
+               </li>
+               <li class="inst-shots__item">
+                  <img class="inst-shots__img" src="./dist/img/inst-post-img3.png" alt="" width="285" height="285">
+               </li>
+               <li class="inst-shots__item">
+                  <img class="inst-shots__img" src="./dist/img/inst-post-img4.png" alt="" width="285" height="285">
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container footer__container">
+         <p class="section-title footer__title">
+            - get in touch with us -
+         </p>
+         <p class="footer__text">
+            Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed donec malesuada ullamcorper
+            odio. Curabitur blandit tempus porttitor vollisky inceptos mollisestor.
+         </p>
+         <ul class="footer__social-links">
+            <li>
+               <a href="#">
+                  <img src="./dist/img/footer-icon1.png" alt="" height="34" width="34">
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./dist/img/footer-icon2.png" alt="" height="34" width="34">
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./dist/img/footer-icon3.png" alt="" height="34" width="34">
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./dist/img/footer-icon4.png" alt="" height="34" width="34">
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./dist/img/footer-icon5.png" alt="" height="34" width="34">
+               </a>
+            </li>
+         </ul>
+         <p class="footer__contacts">
+            <span> Moonshine St. 14-05 Light City &nbsp &nbsp / &nbsp &nbsp</span>
+            <a class="footer__number" href="tel:+001234567890">T. +00 (123) 456 78 90 &nbsp &nbsp / &nbsp &nbsp</a>
+            <a class="footer__email" href="mailto:first.last@email.com">first.last@email.com</a>
+         </p>
+      </div>
+   </footer>
+   <script src="./dist/js/script.min.js"></script>
+</body>
+
+</html>
