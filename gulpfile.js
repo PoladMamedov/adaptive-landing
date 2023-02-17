@@ -34,7 +34,11 @@ function styles() {
     .pipe(bsServer.reload({ stream: true }));
 }
 function img() {
-  return src("./src/img/*.*").pipe(imgMin()).pipe(dest("./dist/img/"));
+  src("./dist/img/*").pipe(clean());
+  return src("./src/img/*.*")
+    .pipe(imgMin())
+    .pipe(dest("./dist/img/"))
+    .pipe(bsServer.reload({ stream: true }));
 }
 
 function watcher() {

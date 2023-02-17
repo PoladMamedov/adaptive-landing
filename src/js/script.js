@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".main-header__burger-btn");
 const menu = document.querySelector(".main-header__menu");
+
 menuBtn.addEventListener("click", (e) => {
   const target = e.target.closest("button");
   for (const i of target.children) {
@@ -7,6 +8,7 @@ menuBtn.addEventListener("click", (e) => {
   }
   menu.classList.toggle("main-header__menu--show");
 });
+
 window.addEventListener("resize", () => {
   if (
     window.matchMedia("(min-width: 768px)").matches &&
